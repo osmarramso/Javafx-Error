@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1920.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.userPanelSceneController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="322.0" minWidth="10.0" prefWidth="322.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="972.0" minWidth="10.0" prefWidth="758.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="1200.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+       <ListView fx:id="taskListField" minHeight="200" minWidth="108.0" prefHeight="1404.0" prefWidth="108.0" GridPane.rowIndex="1" />
+      <Pane fx:id="processPaneField" prefHeight="1203.0" prefWidth="735.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Text fx:id="titleField" strokeType="OUTSIDE" strokeWidth="0.0" text="USER PANEL" textAlignment="CENTER" wrappingWidth="1138.7294921875" GridPane.columnIndex="1">
+         <font>
+            <Font size="75.0" />
+         </font>
+      </Text>
+   </children>
+</GridPane>
